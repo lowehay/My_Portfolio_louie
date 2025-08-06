@@ -9,7 +9,7 @@ const testimonials = {
       name: "Royd Catalunes",
       role: "Back-end Developer",
       company: "Classfiy",
-      content: "Louie is excellent at his work. He's very precise and knows how to build responsive and clean interfaces. He contributed a lot to our projects.",
+      content: "Louie is excellent at his work. He&apos;s very precise and knows how to build responsive and clean interfaces. He contributed a lot to our projects.",
       rating: 5
     },
     {
@@ -20,7 +20,7 @@ const testimonials = {
       rating: 5
     },
     {
-      name: "Burleign Ponce",
+      name: "Burleighn Ponce",
       role: "Quality Assurance",
       company: "Classfiy",
       content: "Louie is professional and reliable. Not only can he code well, but he also understands good design and user experience.",
@@ -43,7 +43,7 @@ const testimonials = {
       rating: 5
     },
     {
-      name: "Burleign Ponce",
+      name: "Burleighn Ponce",
       role: "Quality Assurance",
       company: "Classfiy",
       content: "Propesyonal at maaasahan si Louie. Marunong siya sa coding at may magandang sense sa design para sa user experience.",
@@ -55,7 +55,7 @@ const testimonials = {
       name: "Royd Catalunes",
       role: "Back-end Developer",
       company: "Classfiy",
-      content: "Si Louie maayo gid magtrabaho. He's very precise and knows how to build responsive and visually clean interfaces. Daku ang nabulig niya sa amon mga project.",
+      content: "Si Louie maayo gid magtrabaho. He&apos;s very precise and knows how to build responsive and visually clean interfaces. Daku ang nabulig niya sa amon mga project.",
       rating: 5
     },
     {
@@ -66,7 +66,7 @@ const testimonials = {
       rating: 5
     },
     {
-      name: "Burleign Ponce",
+      name: "Burleighn Ponce",
       role: "Quality Assurance",
       company: "Classfiy",
       content: "Professional kag masaligan si Louie. Not only maayo siya mag-code, but he also understands good design para sa user experience.",
@@ -111,7 +111,7 @@ export function Testimonials() {
             Voices of Trust
           </motion.h2>
           <p className="text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            Authentic testimonials from colleagues and collaborators who've experienced my work firsthand
+            Authentic testimonials from colleagues and collaborators who&apos;ve experienced my work firsthand
           </p>
         </motion.div>
 

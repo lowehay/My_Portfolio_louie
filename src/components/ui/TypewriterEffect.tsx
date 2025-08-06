@@ -1,31 +1,31 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface TypewriterEffectProps {
   text: string | string[];
-  className?: string;
   speed?: number;
   pauseTime?: number;
 }
 
-export function TypewriterEffect({ text, className = '', speed = 100, pauseTime = 2000 }: TypewriterEffectProps) {
+export function TypewriterEffect({ 
+  text, 
+  speed = 150, 
+  pauseTime = 2000 
+}: TypewriterEffectProps) {
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
+  const timer = useRef<NodeJS.Timeout | null>(null);
 
   const texts = Array.isArray(text) ? text : [text];
   const currentText = texts[loopNum % texts.length];
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
-    
     const type = () => {
       if (!isDeleting) {
         setDisplayText(currentText.substring(0, displayText.length + 1));
         
         if (displayText === currentText) {
-          setTimeout(() => setIsDeleting(true), pauseTime);
+          timer.current = setTimeout(() => setIsDeleting(true), pauseTime);
         }
       } else {
         setDisplayText(currentText.substring(0, displayText.length - 1));
@@ -37,13 +37,17 @@ export function TypewriterEffect({ text, className = '', speed = 100, pauseTime 
       }
     };
 
-    timer = setTimeout(type, isDeleting ? speed / 2 : speed);
+    timer.current = setTimeout(type, isDeleting ? speed / 2 : speed);
 
-    return () => clearTimeout(timer);
+    return () => {
+      if (timer.current) {
+        clearTimeout(timer.current);
+      }
+    };
   }, [displayText, isDeleting, currentText, speed, pauseTime, loopNum]);
 
   return (
-    <span className={className}>
+    <span className="text-purple-400">
       {displayText}
       <span className="animate-pulse">|</span>
     </span>
