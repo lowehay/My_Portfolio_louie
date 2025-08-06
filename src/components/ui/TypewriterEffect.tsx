@@ -1,13 +1,17 @@
+'use client';
+
 import { useState, useEffect, useRef } from 'react';
 
 interface TypewriterEffectProps {
   text: string | string[];
+  className?: string;  // Add this line
   speed?: number;
   pauseTime?: number;
 }
 
 export function TypewriterEffect({ 
   text, 
+  className = "",  // Add this line
   speed = 150, 
   pauseTime = 2000 
 }: TypewriterEffectProps) {
@@ -47,7 +51,7 @@ export function TypewriterEffect({
   }, [displayText, isDeleting, currentText, speed, pauseTime, loopNum]);
 
   return (
-    <span className="text-purple-400">
+    <span className={`text-purple-400 ${className}`}>
       {displayText}
       <span className="animate-pulse">|</span>
     </span>
