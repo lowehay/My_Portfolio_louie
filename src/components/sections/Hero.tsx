@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { TypewriterEffect } from '../ui/TypewriterEffect';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -121,6 +122,20 @@ export function Hero() {
               <span className="relative z-10">Get In Touch</span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.a>
+            
+            <Link href="/resume" passHref>
+              <motion.div
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-4 bg-gradient-to-r from-blue-500/70 to-purple-600/70 text-white rounded-xl font-medium overflow-hidden transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-blue-500/20 flex items-center gap-2 cursor-pointer"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+                </svg>
+                <span className="relative z-10">View Resume</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/90 to-purple-700/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.div>
+            </Link>
             
             <motion.a
               href="#about"
