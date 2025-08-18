@@ -30,13 +30,13 @@ export function Footer() {
             viewport={{ once: true }}
             className="flex justify-center gap-6 mb-8"
           >
-            <a href="mailto:yourname@gmail.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
+            <a href="louiejaemaravillosa24@gmail.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
               <Mail className="w-6 h-6" />
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
+            <a href="https://github.com/Lowehay" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
+            <a href="https://instagram.com/Lforlowe" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-purple-400 transition-colors">
               <Instagram className="w-6 h-6" />
             </a>
           </motion.div>

@@ -235,7 +235,7 @@ export function About() {
                   viewport={{ once: true }}
                   className="text-center mt-8"
                 >
-                  <h3 className="text-3xl font-bold text-zinc-100 mb-2">Louie Maravillosa</h3>
+                  <h3 className="text-3xl font-bold text-zinc-100 mb-2">Louie Jae Maravillosa</h3>
                   <p className="text-xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent font-semibold mb-2">
                     Front-End Developer
                   </p>
