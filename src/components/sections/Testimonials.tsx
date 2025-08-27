@@ -9,7 +9,7 @@ const testimonials = {
       name: "Royd Catalunes",
       role: "Back-end Developer",
       company: "Classfiy",
-      content: "Louie is excellent at his work. He&apos;s very precise and knows how to build responsive and clean interfaces. He contributed a lot to our projects.",
+      content: "Louie is excellent at his work. He's very precise and knows how to build responsive and clean interfaces. He contributed a lot to our projects.",
       rating: 5
     },
     {
@@ -55,7 +55,7 @@ const testimonials = {
       name: "Royd Catalunes",
       role: "Back-end Developer",
       company: "Classfiy",
-      content: "Si Louie maayo gid magtrabaho. He&apos;s very precise and knows how to build responsive and visually clean interfaces. Daku ang nabulig niya sa amon mga project.",
+      content: "Si Louie maayo gid magtrabaho. He's very precise and knows how to build responsive and visually clean interfaces. Daku ang nabulig niya sa amon mga project.",
       rating: 5
     },
     {
